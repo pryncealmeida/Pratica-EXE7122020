@@ -16,17 +16,17 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View) {
         if (v.checkbox_1.isChecked) {
-            drwColor1(v)
+            drwColor2()
         }
         else{
-            drwColor2(v)
+            drwColor1()
         }
     }
 
-    private fun drwColor2(v: View) {
-        v.img1.setColorFilter(resources.getColor(R.color.yellowMoon))
+    private fun drwColor2() {
+        img1.setColorFilter(resources.getColor(R.color.yellowMoon))
     }
 
 
-    private fun drwColor1(v: View) = v.img1.setColorFilter(resources.getColor(R.color.bmoon))
+    private fun drwColor1() = img1.setColorFilter(resources.getColor(R.color.bmoon))
 }
