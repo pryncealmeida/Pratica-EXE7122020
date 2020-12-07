@@ -28,7 +28,5 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
 
-    private fun drwColor1(v: View) {
-    v.img1.setColorFilter(resources.getColor(R.color.bmoon))
-    }
+    private fun drwColor1(v: View) = v.img1.setColorFilter(resources.getColor(R.color.bmoon))
 }
